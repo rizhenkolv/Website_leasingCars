@@ -36,13 +36,19 @@ body {
   margin: 0 auto;
   padding: 0 10px;
 }
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 48px;
+  font-weight: 700;
+}
 .header {
   background-color: #151515;
 }
 .header-main {
   background-color: transparent;
   position: absolute;
-  z-index: 5;
+  z-index: 10;
   left: 0;
   right: 0;
 }
@@ -155,4 +161,101 @@ body {
 .swiper-pagination-bullet-active {
   height: 6px;
   background-color: #ffffff;
+}
+.why-lease {
+  margin: 150px 0;
+}
+
+.why-lease__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  text-align: center;
+}
+.why-lease__item-title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 24px;
+}
+.why-lease__item-text {
+  text-align: left;
+}
+.how-does__inner {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 150px;
+}
+.how__does-title {
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 50px;
+}
+.how__does-list {
+  padding: 50px 0 70px;
+  counter-reset: myCounter;
+}
+.how__does-item {
+  list-style-type: none;
+  width: 270px;
+  position: relative;
+  margin-left: auto;
+  box-sizing: content-box;
+  padding: 19px 0 19px 240px;
+  min-height: 63px;
+}
+.how__does-item + .how__does-item {
+  margin-top: 40px;
+}
+.how__does-item::before {
+  counter-increment: myCounter;
+  content: counter(myCounter);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0066ff;
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.video {
+  padding-bottom: 150px;
+}
+.video__title {
+  margin-bottom: 20px;
+}
+.video__text {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.video__content {
+  display: block;
+  margin: 0 auto;
+}
+.important {
+  margin-bottom: 150px;
+}
+.important__title {
+  margin-bottom: 50px;
+}
+.important__text {
+  max-width: 580px;
+  margin: 0 auto 50px;
+}
+.important__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+.important__item-img {
+  padding-bottom: 20px;
 }
